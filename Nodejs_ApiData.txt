@@ -1,0 +1,79 @@
+WeatherApp :
+
+Api Key => 320e81d2cef8069022384a048b714333
+
+Api Path Syntax => https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}
+
+Api Original Path => https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=320e81d2cef8069022384a048b714333
+
+
+1. Json Format data :
+{
+    "coord": {
+        "lon": 73.8553,
+        "lat": 18.5196
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 300.61,
+        "feels_like": 302.81,
+        "temp_min": 300.61,
+        "temp_max": 300.61,
+        "pressure": 1010,
+        "humidity": 70,
+        "sea_level": 1010,
+        "grnd_level": 949
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.48,
+        "deg": 87,
+        "gust": 3.45
+    },
+    "clouds": {
+        "all": 93
+    },
+    "dt": 1662091179,
+    "sys": {
+        "country": "IN",
+        "sunrise": 1662079816,
+        "sunset": 1662124738
+    },
+    "timezone": 19800,
+    "id": 1259229,
+    "name": "Pune",
+    "cod": 200
+}
+
+2. Array Format data :
+[
+  {
+    coord: { lon: 73.8553, lat: 18.5196 },
+    weather: [ [Object] ],
+    base: 'stations',
+    main: {
+      temp: 299.26,
+      feels_like: 299.26,
+      temp_min: 299.26,
+      temp_max: 299.26,
+      pressure: 1004,
+      humidity: 80,
+      sea_level: 1004,
+      grnd_level: 943
+    },
+    dt: 1662802300,
+    sys: { country: 'IN', sunrise: 1662771096, sunset: 1662815530 },
+    timezone: 19800,
+    id: 1259229,
+    name: 'Pune',
+    cod: 200
+  }
+]
